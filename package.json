@@ -1,0 +1,22 @@
+{
+  "name": "jsexercises",
+  "version": "1.0.0",
+  "description": "Exercises and Katas for learning JavaScript and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voghDev/JavaScriptExercises.git"
+  },
+  "author": "Olmo Gallegos",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/voghDev/JavaScriptExercises/issues"
+  },
+  "homepage": "https://github.com/voghDev/JavaScriptExercises#readme",
+  "dependencies": {
+    "jest": "^29.4.1"
+  }
+}
