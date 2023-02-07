@@ -1,23 +1,58 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+.idea
+.DS_STORE
+.eslintcache
+*.swp
+*~
+/examples/*/node_modules/
 
-# dependencies
+/e2e/*/node_modules
+/e2e/*/.pnp
+/e2e/*/.pnp.js
+!/e2e/presets/json/node_modules
+!/e2e/presets/js/node_modules
+/e2e/transform/*/coverage
+/e2e/transform/*/node_modules
+
 /node_modules
-/.pnp
-.pnp.js
 
-# testing
-/coverage
+/packages/*/build/
+/packages/*/dist/
+/packages/*/coverage/
+/packages/*/node_modules/
 
-# production
-/build
+/website/.docusaurus
+/website/.cache-loader
+/website/build
+/website/backers.json
+/website/node_modules
+/website/yarn.lock
+/website/i18n/*
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+/benchmarks/*/node_modules/
 
+/reports/*
+
+coverage
+lerna-debug.log
+npm-debug.log
 npm-debug.log*
-yarn-debug.log*
 yarn-error.log*
+junit.xml
+package-lock.json
+
+*.tsbuildinfo
+api-extractor.json
+
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored but nested for e2e directories
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/releases
+!**/.yarn/plugins
+!**/.yarn/sdks
+!**/.yarn/versions
+**/.pnp.*
+
+crowdin-cli.jar
+
+# We don't want these temp files
+packages/jest-worker/src/workers/__tests__/__temp__
